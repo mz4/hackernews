@@ -1,0 +1,95 @@
+.title {
+  align-items: center;
+  display: flex;
+
+  &__logo {
+    height: 3.2rem;
+    margin-left: 1.6rem;
+  }
+
+  &__name {
+    color: var(--color-font-grey);
+    font-size: 1.6rem;
+  }
+
+}
+
+.login {
+  color: var(--color-font-grey);
+  font-size: 1.6rem;
+  margin-right: 1.6rem;
+}
+
+.side-nav {
+  list-style: none;
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    color: var(--color-font-grey);
+    text-decoration: none;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  border-bottom: var(--line);
+  padding: 1.6rem;
+
+  &__title {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0 1.6rem;
+    line-height: 1.4rem;
+  }
+
+  &__number {
+    background-color: var(--color-background-number);
+    color: var(--color-font-grey);
+    // font-size: 1.6rem;
+    margin-left: 0.8rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    white-space: nowrap;
+    width: 2.4rem;
+  }
+
+  &__tags {
+    color: var(--color-font-grey-c);
+    font-size: 1rem;
+
+    &--info:not(:first-of-type) {
+      margin-left: 0.8rem;
+    }
+
+    &--icon {
+      color: var(--color-font-orange);
+    }
+
+  }
+
+  &__upvote {
+    color: var(--color-font-grey);
+    font-size: 1.6rem;
+    margin-left: auto;
+  }
+
+  &__comment {
+    color: var(--color-font-grey);
+    font-size: 1.6rem;
+    margin-left: 0.8rem;
+  }
+
+}
+
+// .fa-home {
+//   font-size: 1rem;
+// }

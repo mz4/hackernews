@@ -2,8 +2,8 @@ import Details from '../details/Details';
 import useFetch from '../../utils/useFetch';
 import Loader from '../../utils/loader';
 
-const News = () => {
-  const data = useFetch('top');
+const News = ({ type }) => {
+  const data = useFetch(type);
 
   return (
     <div className="news">

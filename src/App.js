@@ -1,3 +1,9 @@
+import { 
+  HashRouter as Router,
+  Route, 
+  Switch,
+  Redirect
+} from 'react-router-dom'
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
 import News from './components/news/News';
@@ -8,8 +14,26 @@ function App() {
     <div className="container">
       <Header />
       <div className="content">
-        <Sidebar />
-        <News />
+        <Router>
+          <Sidebar />
+          <Switch>
+            <Route path="/top" >
+              <News type='top' />
+            </Route>
+            <Route path="/best" >
+              <News type='best' />
+            </Route>
+            <Route
+                exact
+                path="/"
+                render={() => {
+                    return (
+                      <Redirect to="/top" /> 
+                    )
+                }}
+              />
+          </Switch>
+        </Router>
       </div>
     </div>
   );

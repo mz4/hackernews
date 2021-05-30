@@ -1,21 +1,23 @@
+import { NavLink } from "react-router-dom";
+
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar__container">
         <ul className="side-nav">
           <li className="side-nav__item">
-            <a href="#" className="side-nav__link">
+            <NavLink to="/top" className="side-nav__link" activeClassName="side-nav__link--active">
               <span className="side-nav__name">
-                New
-            </span>
-            </a>
+                Top stories
+              </span>
+            </NavLink>
           </li>
           <li className="side-nav__item">
-            <a href="#" className="side-nav__link">
+            <NavLink to="/best" className="side-nav__link" activeClassName="side-nav__link--active">
               <span className="side-nav__name">
-                Past
-            </span>
-            </a>
+                Best stories
+              </span>
+            </NavLink>
           </li>
         </ul>
       </div>

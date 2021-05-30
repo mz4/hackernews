@@ -30,6 +30,10 @@
   &__link {
     color: var(--color-font-grey);
     text-decoration: none;
+
+    &--active {
+      color: var(--color-background-number);
+    }
   }
 
   &__name {

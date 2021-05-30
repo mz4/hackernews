@@ -12,7 +12,8 @@ const useFetch = (type) =>  {
       .catch(() => {
         console.log('error');
       })
-  }, [])
+    return setData([]);
+  }, [type])
 
   return data;
 }

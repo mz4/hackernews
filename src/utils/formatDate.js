@@ -1,8 +1,11 @@
 const formatDate = (unixTimestamp) => {
-  let humanDateFormat = '';
-  const milliseconds = unixTimestamp * 1000 // 1575909015000
-  const dateObject = new Date(milliseconds)
-  return humanDateFormat = dateObject.toLocaleString()
+  try {
+    const milliseconds = unixTimestamp * 1000
+    const dateObject = new Date(milliseconds)    
+    return dateObject.toLocaleString()
+  } catch (error) {
+    console.log('error processing data');
+  }
 }
 
 export default formatDate;

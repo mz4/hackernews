@@ -1,4 +1,5 @@
 import formatUrl from '../../utils/formatUrl';
+import formatDate from '../../utils/formatDate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faHeart, 
@@ -27,7 +28,7 @@ const Details = ({ title, idx, score, by, time, url }) => {
             <FontAwesomeIcon icon={faUser} className="news-item__tags--icon" /> {by}
           </span>
           <span className="news-item__tags--info">
-            <FontAwesomeIcon icon={faClock} className="news-item__tags--icon" /> {time}
+            <FontAwesomeIcon icon={faClock} className="news-item__tags--icon" /> {formatDate(time)}
           </span>
           <span className="news-item__tags--info">
             <FontAwesomeIcon icon={faLink} className="news-item__tags--icon" /> {formatUrl(url)}

@@ -53,7 +53,6 @@
   &__number {
     background-color: var(--color-background-number);
     color: var(--color-font-grey);
-    // font-size: 1.6rem;
     margin-left: 0.8rem;
     height: 2.4rem;
     line-height: 2.4rem;
@@ -74,6 +73,11 @@
       color: var(--color-font-orange);
     }
 
+    &--link {
+      color: var(--color-font-grey-c);
+      text-decoration: none;
+    }
+
   }
 
   &__upvote {
@@ -90,6 +94,42 @@
 
 }
 
-// .fa-home {
-//   font-size: 1rem;
-// }
+.loader-box {
+  display: flex;
+  align-items: center;
+  border-bottom: var(--line);
+  padding: 1.6rem;
+
+  &__number {
+    background-color: var(--color-background-dark);
+    margin-left: 0.8rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    white-space: nowrap;
+    width: 2.4rem;
+  }
+
+  &__display {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.8rem;
+  }
+
+  &__title {
+    background-color: var(--color-background-dark);
+    padding: 0 1.6rem;
+    height: 0.8rem;
+    width: 45rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__tags {
+    background-color: var(--color-background-dark);
+    padding: 0 1.6rem;
+    height: 0.8rem;
+    width: 45rem;
+  }
+
+}
+

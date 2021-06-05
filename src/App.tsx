@@ -6,12 +6,13 @@ import {
 } from 'react-router-dom'
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
+import React from 'react';
 import News from './components/news/News';
 import './sass/App.scss';
 
 function App() {
   return (
-    <div className="container">
+    <div className="container" data-testid="App">
       <Header />
       <div className="content">
         <Router>

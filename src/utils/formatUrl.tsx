@@ -1,3 +1,5 @@
+import React from 'react';
+
 const formatUrl = (url) => {
   let hostname = 'n/a';
   if (url !== undefined) {

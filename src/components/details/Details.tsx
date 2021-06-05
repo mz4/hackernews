@@ -1,3 +1,4 @@
+import React from 'react';
 import formatUrl from '../../utils/formatUrl';
 import formatDate from '../../utils/formatDate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

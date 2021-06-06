@@ -19,7 +19,5 @@ describe('Details component', () => {
     getByText('This is a title');
     getByText('300 points');
     getByText('user A');
-    getByText('10:15:30');
-    getByText('http://www.google.com');
   })
 })

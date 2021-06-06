@@ -25,7 +25,6 @@
     "noEmit": true
   },
   "exclude": [
-    "./src",
     "./node_modules/",
     "./build/"
   ],

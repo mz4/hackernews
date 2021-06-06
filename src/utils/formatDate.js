@@ -1,5 +1,3 @@
-import React from 'react';
-
 const formatDate = (unixTimestamp) => {
   try {
     const milliseconds = unixTimestamp * 1000

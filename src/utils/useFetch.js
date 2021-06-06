@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { getStories } from './api';
+import { useState, useEffect } from 'react';
+import getStories from './getStories';
 
 const useFetch = (type) =>  {
   const [data, setData] = useState([]);

@@ -5,8 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "webpack --mode development",
-    "dev": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "test": "react-scripts test"
   },

@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Route, MemoryRouter } from 'react-router-dom';
-import { createMemoryHistory } from 'history'
 import App from '../App';
 
 describe('Test App component', () => {

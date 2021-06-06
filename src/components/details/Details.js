@@ -13,7 +13,7 @@ import {
 
 const Details = ({ title, idx, score, by, time, url }) => {
   return (
-    <div className="news-item">
+    <div className="news-item" data-testid="Details">
 
       <div className="news-item__number">
         {idx}

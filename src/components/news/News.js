@@ -3,23 +3,13 @@ import Details from '../details/Details';
 import useFetch from '../../utils/useFetch';
 import Loader from '../../utils/loader';
 
-interface vinterface {
-  data: {
-    title: string,
-    score: string,
-    by: string,
-    time: string,
-    url: string
-  }
-}
-
 const News = ({ type }) => {
   const data = useFetch(type);
 
   return (
     <div className="news" data-testid={type}>
       <div className="news__container">
-        {data.length > 0 ? data.map((v: vinterface, i) => (
+        {data.length > 0 ? data.map((v, i) => (
           <Details 
             title={v.data.title}
             idx={i+1}

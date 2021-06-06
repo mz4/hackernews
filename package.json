@@ -7,7 +7,8 @@
   "scripts": {
     "start": "webpack --mode development",
     "dev": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "test": "react-scripts test"
   },
   "keywords": [],
   "author": "",
@@ -72,6 +73,8 @@
     "@babel/preset-env": "^7.14.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.5.5",
+    "@testing-library/jest-dom": "^5.13.0",
+    "@testing-library/react": "^11.2.7",
     "@types/node": "^12.12.47",
     "@types/react": "^16.9.5",
     "@types/react-dom": "^16.9.1",

@@ -4,7 +4,6 @@ import { Route, MemoryRouter } from 'react-router-dom';
 import App from '../App';
 
 describe('Test App component', () => {
-
   it('It renders App and Best News', () => {
     const { container, getByTestId, queryByTestId } =
     render(
@@ -18,6 +17,5 @@ describe('Test App component', () => {
     expect(getByTestId("top")).toBeInTheDocument();
     expect(queryByTestId("best")).not.toBeInTheDocument();
   });
-
 });
 

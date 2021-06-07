@@ -17,10 +17,3 @@ describe('test API', () => {
     expect(axios.get).toBeCalledWith('https://hacker-news.firebaseio.com/v0/item/75554.json');
   })
 })
-
-
-// const mockedUsers = [{ userId: 1 }];
-// axios.get = jest.fn().mockResolvedValue(mockedUsers);
-// const actualValue = await getUserDataByIds(['1']);
-// expect(actualValue).toEqual(mockedUsers);
-// expect(axios.get).toBeCalledWith('/users');

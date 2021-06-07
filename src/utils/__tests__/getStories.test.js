@@ -1,25 +1,27 @@
-import axios from 'axios';
 import getStories from '../getStories';
+import getStoriesIds from '../getStoriesIds';
+import getStory from '../getStory';
 
 jest.mock('axios');
+jest.mock('../getStoriesIds');
+jest.mock('../getStory');
 
 describe('test API', () => {
 
   beforeEach(() => {
-    axios.get.mockResolvedValueOnce({
-      data: [111, 222, 333, 444, 555]
-    });
-
-    Promise.all = () => {
-      return {}
-    };
-
+    getStoriesIds.mockReturnValueOnce([1, 2, 3, 4, 5]);
+    getStory.mockReturnValue(
+      {
+        data: {
+          id: 1
+        }
+      }
+    );
   });
 
   it('tests the API', async () => {
-    const stories = await getStories('top');
-    expect(stories).toEqual({});
-    expect(axios.get).toHaveBeenCalledTimes(6);
-    expect(axios.get).toBeCalledWith('https://hacker-news.firebaseio.com/v0/topstories.json');
+    const stories = await getStories('top').then((data) => {
+      expect(data).toHaveLength(5);
+    });
   })
-})
+});

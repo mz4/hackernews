@@ -8,6 +8,7 @@ import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
 import React from 'react';
 import News from './components/news/News';
+import Searchnews from './components/searchnews/Searchnews';
 import './sass/App.scss';
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/best" >
               <News type='best' />
+            </Route>
+            <Route path="/searchnews" >
+              <Searchnews type='best' />
             </Route>
             <Route
                 exact

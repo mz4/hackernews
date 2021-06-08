@@ -51,3 +51,11 @@
     margin: 1.6rem;
   }
 }
+
+.search {
+  &__container {
+    background-color: var(--color-background-content);
+    box-shadow: var(--shadow-dark-b);
+    margin: 1.6rem;
+  }
+}

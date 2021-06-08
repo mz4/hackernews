@@ -23,6 +23,16 @@
 .side-nav {
   list-style: none;
 
+  &__title {
+    color: var(--color-font-white);
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--color-font-grey);
+  }
+
+  &__title:not(:first-of-type) {
+    margin-top: 1.2rem;
+  }
+
   &__item {
     position: relative;
   }
@@ -48,7 +58,7 @@
   padding: 1.6rem;
 
   &__title {
-    color: #fff;
+    color: var(--color-font-white);
     font-size: 1.2rem;
     padding: 0 1.6rem;
     line-height: 1.4rem;
@@ -57,7 +67,6 @@
   &__number {
     background-color: var(--color-background-number);
     color: var(--color-font-grey);
-    margin-left: 0.8rem;
     height: 2.4rem;
     line-height: 2.4rem;
     text-align: center;
@@ -137,3 +146,26 @@
 
 }
 
+.search-form {
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &__box {
+    padding: 1.2rem;
+  }
+
+  &__title {
+    color: var(--color-font-orange);
+    font-size: 1.2rem;
+    margin-right: 1.2rem;
+  }
+
+  &__submit {
+    margin-left: auto;
+  }
+
+}
